@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        style="@style/HeaderStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_16dp"
+        android:layout_marginTop="@dimen/size_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivImage"
+        tools:text="Нон-фикшн клуб: Послы джаза." />
+
+    <TextView
+        android:id="@+id/tvDateHeader"
+        style="@style/SubheaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:text="@string/when"
+        android:textSize="@dimen/textSize_16sp"
+        app:layout_constraintStart_toStartOf="@id/tvHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/SubheaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_16sp"
+        app:layout_constraintStart_toStartOf="@id/tvDateHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvDateHeader"
+        tools:text="28.01.2020" />
+
+    <TextView
+        android:id="@+id/tvTimeHeader"
+        style="@style/SubheaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:text="@string/when_time"
+        android:textSize="@dimen/textSize_16sp"
+        app:layout_constraintStart_toEndOf="@id/tvDate"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/SubheaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_16sp"
+        app:layout_constraintStart_toStartOf="@id/tvTimeHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeHeader"
+        tools:text="20:40 - 22:10" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButtonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginVertical="@dimen/size_16dp"
+        android:layout_marginTop="@dimen/size_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTime">
+
+        <Button
+            android:id="@+id/btnDislike"
+            style="@style/EventActionStyle"
+            android:drawableStart="@drawable/ic_dislike"
+            android:padding="@dimen/size_16dp"
+            android:text="@string/less"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnLike"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLike"
+            style="@style/EventActionStyle"
+            android:drawableStart="@drawable/ic_like"
+            android:padding="@dimen/size_16dp"
+            android:text="@string/i_will_go"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnDislike"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDescriptionHeader"
+        style="@style/HeaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="@id/clButtonsContainer"
+        app:layout_constraintTop_toBottomOf="@id/clButtonsContainer" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/SubheaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:gravity="start"
+        android:textSize="@dimen/textSize_20sp"
+        app:layout_constraintStart_toStartOf="@id/tvDescriptionHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionHeader"
+        tools:text="28 января в рамках «Нон-фикшн клуба» мы покажем фильм «Послы джаза» Хьюго Беркли. Это увлекательный рассказ про афроамериканских музыкантов, таких как Диззи Гиллеспи, Дюк Эллингтон, Бенни Гудмен и Луи Армстронг, которые в 50-х и 60-х, в период холодной войны, помогали укреплять репутацию США в других странах. В 1955 году газета «Нью-Йорк Таймс» назвала этот проект чернокожего сенатора от Гарлема Адама Клейтона Пауэлла «секретным акустическим оружием», которое Америка использовала для борьбы с советской идеологией за рубежом. При этом сами джазмены сталкивались с неприкрытой дискриминацией и расизмом у себя на родине и фактически рекламировали страну, которая не относилась к ним с уважением. Перед показом состоится скайп-интервью с режиссером. Вход свободный, по предварительной регистрации." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hackaton</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="hello_subheader_1"><![CDATA[Это навигатор по культурным мероприятиям Департамента культуры Москвы.]]></string>
+    <string name="hello_subheader2">Для настройки рекомендаций, отметь мероприятия, которые нравятся.</string>
+    <string name="hello">Привет</string>
+    <string name="primary_settings_header">Для настройки рекомендаций, отметь мероприятия, которые нравятся.</string>
+    <string name="event_card_learn_more">Узнать больше</string>
+    <string name="dislike">Не нравится</string>
+    <string name="dont_know">Не знаю</string>
+    <string name="like">Нравится</string>
+    <string name="primary_what_to_do_today">Чем заняться сегодня</string>
+    <string name="primary_menu_where_to_go">Куда сходить</string>
+    <string name="menu_selected">Избранное</string>
+    <string name="menu_search">Поиск</string>
+    <string name="when">Когда</string>
+    <string name="when_time">Во сколько</string>
+    <string name="less">Меньше такого</string>
+    <string name="i_will_go">Я пойду</string>
+    <string name="description">Описание</string>
+</resources>

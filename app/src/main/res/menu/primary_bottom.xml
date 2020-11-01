@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_where_to_go"
+        android:icon="@drawable/ic_where_to_go"
+        android:orderInCategory="0"
+        android:title="@string/primary_menu_where_to_go" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="1"
+        android:title="@string/menu_search" />
+
+    <item
+        android:id="@+id/menu_selected"
+        android:icon="@drawable/ic_selected"
+        android:orderInCategory="2"
+        android:title="@string/menu_selected" />
+</menu>
